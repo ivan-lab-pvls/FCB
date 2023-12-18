@@ -166,7 +166,10 @@ class BoardaChild extends StatelessWidget {
       child: Column(
         children: [
           Spacer(),
-          Image.asset(p, fit: BoxFit.fitWidth),
+          Container(
+              height: MediaQuery.of(context).size.height * .4,
+              width: MediaQuery.of(context).size.width * .4,
+              child: Image.asset(p, fit: BoxFit.fitWidth)),
           Spacer(),
           Text(
             fText,

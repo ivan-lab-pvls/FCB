@@ -320,6 +320,8 @@ class CalendarMatchItem extends StatelessWidget {
                       match.homeTeamLogo,
                       width: 32,
                       height: 32,
+                      errorBuilder: (context, error, stackTrace) =>
+                          const SizedBox(),
                     ),
                   ],
                 ),
